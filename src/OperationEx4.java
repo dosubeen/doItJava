@@ -8,6 +8,5 @@ public class OperationEx4 {
         ch = (fatherAge > motherAge) ? 'T' : 'F';
 
         System.out.println(ch);
-
     }
 }
