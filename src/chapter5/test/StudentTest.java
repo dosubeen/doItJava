@@ -1,4 +1,6 @@
-package hiding;
+package chapter5.test;
+
+import chapter5.Student;
 
 public class StudentTest {
     public static void main(String[] args) {
