@@ -6,11 +6,11 @@ public class Student {
     int grade;
     String address;
 
-    public String getStudentName() {
+    public String getStudentName() {  //private 변수인 studentName에 접근해 값을 가져오는 public get() 메소드
 
         return studentName;
     }
-    public void setStudentName() {
+    public void setStudentName(String studentName) {  //private 변수인 studentName 에 접근해 값을 지정하는 public set() 메서드
 
         this.studentName = studentName;
     }
