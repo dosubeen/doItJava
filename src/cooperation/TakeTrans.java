@@ -1,5 +1,7 @@
 package cooperation;
 
+import chapter6.cooperation.Taxi;
+
 public class TakeTrans {
     public static void main(String[] args) {
         Student studentJames = new Student("James",5000);
@@ -14,5 +16,11 @@ public class TakeTrans {
         studentTomas.takeSubway(subwayGreen); //토마스가 2호선을 탐.
         studentTomas.showInfo();//토마스 정보 출력
         subwayGreen.showInfo();//지하철 정보 출력
+
+        Student studentEdward = new Student("Edward", 15000);
+        Taxi taxi = new Taxi("Hi");
+        studentEdward.takeTaxi(taxi);
+        studentEdward.showInfo();
+        taxi.showInfo();
     }
 }

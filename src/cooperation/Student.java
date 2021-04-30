@@ -1,5 +1,7 @@
 package cooperation;
 
+import chapter6.cooperation.Taxi;
+
 public class Student {
     public String studentName;   //학생이름
     public int grade;   //학년
@@ -20,7 +22,13 @@ public class Student {
         this.money -= 1500;  //학생이 지하철을 타면 1,500원을 지불하는 기능을 구현한 메서드
     }
 
+    public void takeTaxi(Taxi taxi) {
+        taxi.take(10000);
+        this.money -= 10000;
+    }
+
     public void showInfo() {
         System.out.println(studentName + "님의 남은 돈은" + money + "입니다.");  //학생의 현재 정보를 출력하는 메서드
     }
+
 }
